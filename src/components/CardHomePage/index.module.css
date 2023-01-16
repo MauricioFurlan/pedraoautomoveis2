@@ -1,0 +1,158 @@
+
+
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    
+}
+
+.card_header {
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+.card_image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* padding-top: 58.18182%; */
+    overflow: hidden;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    -webkit-transition: opacity .25s linear;
+    transition: opacity .25s linear;
+}
+
+
+
+.card_image_value img {
+    background-size: auto;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: relative;
+    top: 0;
+    margin: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* background-image: url('https://production.autoforce.com/uploads/used_model/profile_image/21894403/model_middle_webp_comprar-hr-v-1-8-16v-ex-2018-1844_c2d053dcfa.jpg.webp'); */
+}
+
+
+.car_title {
+    font-weight: 700;
+    line-height: 18px;
+    line-height: 1.125rem;
+    color: #303133;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_options {
+    margin: 0 6rem;
+}
+
+.card_list {
+    font-size: 0.75rem;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card_year {
+    margin: 0;
+    background-color: var(--blue);
+    width: 6rem;
+    margin-bottom: 0.75rem;
+}
+
+.card_year_text {
+    background-color: var(--blue);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    line-height: 1rem;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.3rem 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card_footer {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.card_footer_value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 32px;
+    color: #303133;
+    margin-bottom: 0.75rem;
+}
+
+.card_footer_btn {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    font-size: 14px;
+    font-size: .875rem;
+    font-family: inherit;
+    line-height: 18px;
+    line-height: 1.125rem;
+    padding: 8px 30px;
+    font-weight: 700;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: #999;
+    border-color: transparent;
+    border-width: 1px;
+    color: #fff;
+    background-color: var(--blue);
+    margin-bottom: 1.2rem;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+a:hover {
+    color:#fff; 
+    text-decoration:none; 
+    cursor:pointer;  
+}

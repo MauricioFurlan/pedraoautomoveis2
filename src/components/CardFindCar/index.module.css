@@ -1,0 +1,26 @@
+
+
+.findCard {
+    background-color: rgb(246, 246, 246);
+}
+.msg_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clear {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clear:hover {
+    color:var(--primary);
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+.cantainer_input {
+    margin: 10px
+}

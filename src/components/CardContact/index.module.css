@@ -1,0 +1,45 @@
+
+.checkbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.authorization {
+    margin-left: 0.5rem;
+}
+
+.card_footer_btn {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    font-size: 14px;
+    font-size: 1.2rem;
+    font-family: inherit;
+    line-height: 1px;
+    line-height: 0.5rem;
+    padding: 1.5rem 30px;
+    font-weight: 500;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: #999;
+    border-color: transparent;
+    border-width: 1px;
+    color: #fff;
+    background-color: var(--blue);
+    margin-bottom: 1.2rem;
+}
+
+
+.auth_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.auth_text a {
+  color: black;
+}

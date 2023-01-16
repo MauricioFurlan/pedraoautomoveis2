@@ -1,0 +1,7 @@
+
+
+.img_slider {
+    width: 100%;
+    object-fit: cover;  /* aumentar a imagem sem distorcer porém corta parte da imagem */
+}
+

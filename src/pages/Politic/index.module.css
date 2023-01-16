@@ -1,0 +1,23 @@
+
+
+
+
+.body_txt {
+   padding: 2rem;
+   background-color: #fff;
+}
+
+.privacy_policy_title {
+    margin: 0 0 15px 0;
+    color: #303133;
+    line-height: 32px
+  }
+
+.body_txt a {
+    color: black;
+}
+
+.separator {
+    background-color: #fff;
+    padding: 0.5rem;
+}

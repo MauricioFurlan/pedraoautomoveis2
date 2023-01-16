@@ -1,0 +1,12 @@
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column
+}
+
+.ops {
+    font-size: 2.5rem;
+}

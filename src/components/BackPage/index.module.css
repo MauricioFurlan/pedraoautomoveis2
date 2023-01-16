@@ -1,0 +1,17 @@
+.page_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.page_info a {
+    font-size: small;
+    color:#666;
+    margin: 0.5rem;
+
+}
+
+.back_page {
+    font-size: small;
+}
