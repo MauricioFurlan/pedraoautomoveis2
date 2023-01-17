@@ -2,6 +2,7 @@ import '../../global.css';
 import { Card } from "../../components/CardHomePage";
 import { Loading } from "../../components/Loading";
 import { PageDefault } from "../PageDefault";
+import {SliderMain} from "../../components/SliderHomePage";
 
 
 function Home({data}) {
@@ -18,17 +19,15 @@ function Home({data}) {
       <h3 className="sub-title">
       Confira os destaques especiais que reservamos para você!
       </h3>
-      <div className="card_container">
         { 
-        data != [] ? (
-          data.map(item => {
-            return <div key={item.id}><Card car={item}/></div>
-          })
+        data.length > 0 ? (
+          <ul className="card_container_slider">
+          <SliderMain items={data}/>
+          </ul>
           ) : (
             <Loading></Loading>
             )
           }
-      </div>
       </PageDefault>
       </div>
     </>

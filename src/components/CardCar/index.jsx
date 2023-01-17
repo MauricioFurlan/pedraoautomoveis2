@@ -1,7 +1,7 @@
 import styles from './index.module.css';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import SimpleSlider from '../Slider';
+import SliderShowCar from '../Slider';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import { Loading } from '../Loading';
 
@@ -25,7 +25,7 @@ export function CardCar({car}) {
 
       <div className={styles.content_car_info}>
             <div className={styles.content_slider}>
-            <SimpleSlider/>
+            <SliderShowCar car={car}/>
             <br></br>
             <div className={styles.text}>
             INFORMAÇÕES TÉCNICAS

@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import styles from './index.module.css';
 import ContactCard from '../../components/CardContact';
 import { CardCar } from '../../components/CardCar';
 import { CardInfo } from '../../components/CardInfo';
-import CustomSeparator from '../../components/Breadcrumbs';
 import { PageDefault } from '../PageDefault';
 import { BackPage } from '../../components/BackPage';
 
