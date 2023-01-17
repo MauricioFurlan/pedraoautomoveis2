@@ -35,27 +35,29 @@
 
 }
 
+
 @media (max-width: 800px) {
     .container_text {
-      width: 80%;
+      max-width: 100%;
+      min-width: 100%;
       min-height: 100%;
       max-width: 100%;
       padding: 0;
-      margin-top: 0;
+     margin-top: 0.5rem;
       
     }
   }
 
 .text {
     width: 50%;
-    margin-left: 2rem; 
     color: #fff;
 }
 
 @media (max-width: 800px) {
     .text {
-      width: 100vw;
-      margin: 0;
+      /* width: 100vw; */
+      width: 70%;
+      padding: 0.2rem;
      
     }
   }
@@ -64,7 +66,12 @@
     border-bottom: rgb(181, 179, 179) 4px solid;
     width: 50%;
 }
-
+@media (max-width: 800px) {
+    .title {
+      margin-top: 1rem;
+     
+    }
+  }
 .space {
     background-color: #fff;
 }

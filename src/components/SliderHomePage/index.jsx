@@ -36,6 +36,7 @@ export function SliderMain({items})
         initialSlide: 1,
         autoplay: true,
         pauseOnHover: true,
+        arrows: true,
         nextArrow: (
           <SamplePrevArrow/>
         ),
@@ -50,7 +51,7 @@ export function SliderMain({items})
                 slidesToScroll: 1,
                 infinite: true,
                 dots: true,
-                Arrows: true
+                arrows: false
               }
             },
             {
@@ -59,7 +60,7 @@ export function SliderMain({items})
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 initialSlide: 1,
-                Arrows: false
+                arrows: false
 
               }
             },
@@ -68,7 +69,7 @@ export function SliderMain({items})
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                Arrows: false
+                arrows: false
               }
             }
           ]
