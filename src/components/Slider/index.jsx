@@ -20,7 +20,7 @@ export default function SliderShowCar({car}) {
           car.fotos.map(pathImage => {
             return (
               <div>
-              <img className={styles.img_slider} src={pathImage}/>
+              <img className={styles.img_slider} src={pathImage.url}/>
               </div>
             )
           })

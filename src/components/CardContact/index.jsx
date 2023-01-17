@@ -2,7 +2,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import styles from './index.module.css';
-import { Checkbox, FormControlLabel, FormGroup, FormControl, Button } from '@mui/material';
+import { Checkbox, FormControlLabel, Button } from '@mui/material';
 import $ from 'jquery';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
@@ -34,9 +34,9 @@ export default function ContactCard({car}) {
       },
       autorizacao_de_dados: auth,
       veiculo_interessado: {
-        nome_carro: car.nome_carro,
-        modelo: car.description.modelo,
-        km: car.description.km,
+        nome_carro: car.nomeCarro,
+        modelo: car.descricao[0].modelo,
+        km: car.descricao[0].km,
         preco: car.preco
       }
     }

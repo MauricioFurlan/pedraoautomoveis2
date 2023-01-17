@@ -10,7 +10,7 @@ export default function CustomSeparator({page}) {
       Home
     </Link>,
     <Typography key="1">
-      { page?.nome_carro || page}
+      { page?.nomeCarro || page}
     </Typography>,
   ];
 

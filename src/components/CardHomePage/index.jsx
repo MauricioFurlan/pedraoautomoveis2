@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from './index.module.css';
-
 export function Card({car}) {
-
     return (
         <>
     <div className={styles.card}>
@@ -11,29 +9,29 @@ export function Card({car}) {
             <div className={styles.card_image}>
                 <div className={styles.container_img} >
                     <div className={styles.card_image_value} >
-                        <img src={car.destaque}></img>
+                        <img src={car.destaque.url}></img>
                     </div>
                 </div>
             </div>
             <div key={car.id} className={styles.car_title}>
-            {car.nome_carro}
+            {car.nomeCarro}
         </div>
         <div className={styles.content_options}>
             <hr></hr>
             <ul className={styles.card_list}>
                 <li>
-                    <strong key={car.id}>Cambio: </strong>{car.description.cambio}
+                    <strong key={car.id}>Cambio: </strong>{car.descricao[0].cambio}
                 </li>
                 <li>
-                    <strong key={car.id}>Quilometragem: </strong>{car.description.km}
+                    <strong key={car.id}>Quilometragem: </strong>{car.descricao[0].km}
                 </li>
                 <li>
-                    <strong key={car.id}>Combustivel: </strong>{car.description.combustivel}
+                    <strong key={car.id}>Combustivel: </strong>{car.descricao[0].combustivel}
                 </li>
             </ul>
             <hr></hr>
             <div className={styles.card_year}>
-            <span key={car.id} className={styles.card_year_text}>{car.description.ano_modelo}</span>
+            <span key={car.id} className={styles.card_year_text}>{car.descricao[0].anoModelo}</span>
             </div>
         </div>
         <div className={styles.card_footer}>

@@ -9,12 +9,13 @@ import { BackPage } from "../../components/BackPage";
 import { UserContext } from "../../context/car.context";
 import { CardNotFound } from "../../components/CarNotFound";
 
-export default function Seminovos() {
-    const { cars } = useContext(UserContext);
+export default function Seminovos({cars}) {
+    // const { cars } = useContext(UserContext);
     const [car, setCar] = useState(undefined)
     const [notCarFound, setNotCarFound] = useState(true)
 
     function updateListCars(foundCars) {
+        console.log('foundCars', foundCars)
         if (!foundCars) return;
         setCar(foundCars)
     }
@@ -31,13 +32,13 @@ export default function Seminovos() {
               }
               setCar(cars)
             } catch (e) {
-                const data = await getAllCategoriesAsync();
-                setCar(data)
+                // const data = await getAllCategoriesAsync();
+                setCar(cars)
               }
             };
         catchData();
     }, []);
-    
+
     return (
         <>
         { car && 
@@ -58,7 +59,6 @@ export default function Seminovos() {
             })
             ) : (
                 <>
-                <Loading></Loading>
                 </>
                 )
             }

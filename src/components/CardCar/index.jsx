@@ -16,7 +16,7 @@ export function CardCar({car}) {
               <>
       <div className={styles.content}>
                 <div className={styles.name}>
-                    {car.nome_carro}
+                    {car.nomeCarro}
                 </div>
                 <div className={styles.preco}>
                     R${car.preco}
@@ -34,61 +34,61 @@ export function CardCar({car}) {
                 <div>
                     MARCA: 
                         <span>
-                            {car.description.marca}
+                            {car.descricao[0].marca}
                         </span>
                 </div>
                 <div>
                     MODELO: 
                         <span>
-                            {car.description.modelo}
+                            {car.descricao[0].modelo}
                         </span>
                 </div>
                 <div>
                     VERSÃO: 
                     <span>
-                        {car.description.versao}
+                        {car.descricao[0].versao}
                     </span> 
                 </div>
                 <div>
                     QUILOMETRAGEM: 
                     <span>
-                        {car.description.km}
+                        {car.descricao[0].km}
                     </span> 
                 </div>
                 <div>
                     ANO/MODELO: 
                     <span>
-                    {car.description.ano_modelo}
+                    {car.descricao[0].anoModelo}
                     </span> 
                 </div>
                 <div>
                     FINAL DA PLACA: 
                     <span>
-                    {car.final_placa}
+                    {car.descricao[0].finalPlaca}
                     </span> 
                 </div>
                 <div>
                     COR: 
                     <span>
-                        {car.description.cor}
+                        {car.descricao[0].cor}
                     </span> 
                 </div>
                 <div>
                     CÂMBIO: 
                     <span>
-                    {car.description.cambio}
+                    {car.descricao[0].cambio}
                     </span> 
                 </div>
                 <div>
                     COMBUSTÍVEL: 
                     <span>
-                    {car.description.combustivel}
+                    {car.descricao[0].combustivel}
                     </span> 
                 </div>
             </div>
             <div className={styles.other_info}>
                     {
-                        car && car.options_descriptions.map(item => (
+                        car && car.opcionaisDoVeiculo.map(item => (
                             <>
                              <div className={styles.items} key={car.id}>{item}
                               <span><CheckCircleOutlineIcon fontSize='sm' color="success" /></span>
@@ -101,7 +101,7 @@ export function CardCar({car}) {
             <div className={styles.more_info}>
             <h5>Mais Informações</h5>
             <div className={styles.more_info_text}>
-                {car.other_description}
+                {car.obs}
             </div>
             </div>
             </div>

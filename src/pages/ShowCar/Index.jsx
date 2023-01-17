@@ -8,10 +8,9 @@ import { BackPage } from '../../components/BackPage';
 
 
 function ShowCar({cars}) {
-  console.log('carsss', cars)
     const { id } = useParams();
-    const car = cars.filter(item => item['id'] == id)[0];
-    
+    const car = cars.filter(item => item.id == id)[0];
+    console.log('aaaaaaaaaaaa', car, id)
     // const [car, setCar] = useState(undefined)
     // useEffect(() => {
     //   const catchData = async () => {

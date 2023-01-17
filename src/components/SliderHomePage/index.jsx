@@ -33,7 +33,7 @@ export function SliderMain({items})
         speed: 1000,
         slidesToShow: 4,
         slidesToScroll: 4,
-        initialSlide: 0,
+        initialSlide: 1,
         autoplay: true,
         pauseOnHover: true,
         nextArrow: (
@@ -46,8 +46,8 @@ export function SliderMain({items})
             {
               breakpoint: 1024,
               settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToShow: 2,
+                slidesToScroll: 1,
                 infinite: true,
                 dots: true,
                 Arrows: true
@@ -56,9 +56,9 @@ export function SliderMain({items})
             {
               breakpoint: 600,
               settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                initialSlide: 2,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                initialSlide: 1,
                 Arrows: false
 
               }
@@ -77,7 +77,7 @@ export function SliderMain({items})
       <>
             <Slider {...settings}>
             { 
-            items != [] ? (
+            items.length > 0 ? (
             items.map(item => {
                 return  <Card key={item.id} car={item}/>
             })
@@ -86,10 +86,6 @@ export function SliderMain({items})
             )
             }
             </Slider>
-            {/* {
-                items.map( (item, i) => <Item key={i} item={item} /> )
-                
-            } */}
         </>
     )
 }

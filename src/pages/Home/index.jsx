@@ -1,9 +1,7 @@
 import '../../global.css';
-import { Card } from "../../components/CardHomePage";
 import { Loading } from "../../components/Loading";
 import { PageDefault } from "../PageDefault";
 import {SliderMain} from "../../components/SliderHomePage";
-
 
 function Home({data}) {
   return (

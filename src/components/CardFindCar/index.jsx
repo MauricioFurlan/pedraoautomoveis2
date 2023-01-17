@@ -26,7 +26,7 @@ export default function CardFindCar({cars, updateListCars, isCarFound}) {
         const model = $('#modelo_id').val()
         if (carName == '' && mark == '') return;
         if (model !== '') {
-            const resultModel = cars.filter(item => item.nome_carro.toUpperCase() == model.toUpperCase())
+            const resultModel = cars.filter(item => item.nomeCarro.toUpperCase() == model.toUpperCase())
             updateListCars(resultModel)
             isCarFound(resultModel.length)
             $('#find_car').val('')
@@ -38,7 +38,7 @@ export default function CardFindCar({cars, updateListCars, isCarFound}) {
             isCarFound(resultCarName.length)
             return;
         } 
-        const resultMark = cars.filter(item => item.description.marca.toUpperCase() == mark)
+        const resultMark = cars.filter(item => item.descricao[0].marca.toUpperCase() == mark)
         updateListCars(resultMark)
         isCarFound(resultMark.length)
         return;
@@ -46,23 +46,24 @@ export default function CardFindCar({cars, updateListCars, isCarFound}) {
     const MarkList = removeDuplicates(cars)
 
     function setCarModel(_, value) {
-        const resultMark = cars.filter(item => item.description.marca.toUpperCase() == value.label)
+        const resultMark = cars.filter(item => item.descricao[0].marca.toUpperCase() == value.label)
         setDisabled(false)
         const myList = []
         for (let i=0; i<resultMark.length; ++i) {
             myList.push({
-                label: resultMark[i]['nome_carro']
+                label: resultMark[i]['nomeCarro']
             })
         }
         setModel(myList);
-        setValueMark(value)
+        setValueMark(value);
     }
     function onResetFindCars() {
-        $('#find_car').val('')
-        setValueMark('')
-        setValueModel('')
-        setDisabled(true)
-        updateListCars(cars)
+        $('#find_car').val('');
+        setValueMark('');
+        setValueModel('');
+        setDisabled(true);
+        updateListCars(cars);
+        isCarFound(true);
     }
    
     return (

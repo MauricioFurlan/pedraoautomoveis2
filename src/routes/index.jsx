@@ -7,24 +7,22 @@ import Seminovos from '../pages/Seminovos';
 import { UserContext } from '../context/car.context';
 import { About } from '../pages/About';
 
-
-const Routes = () => {
-  const { cars } = useContext(UserContext);
-  const data = cars;
+const Routes = ({cars}) => {
+  // const { cars } = useContext(UserContext);
   return (
     <BrowserRouter>
       <Switch>
         <Route exact path="/">
-          <Home data={data}/>
+          <Home data={cars}/>
         </Route>
         <Route exact path="/car/:id">
-        <ShowCar cars={data}/>
+        <ShowCar cars={cars}/>
         </Route>   
         <Route exact path="/politic">
         <Politic/>
         </Route>  
         <Route exact path="/seminovos">
-        <Seminovos/>
+        <Seminovos cars={cars}/>
         </Route>    
         <Route exact path="/quemsomos">
           <About/>
